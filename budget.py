@@ -20,7 +20,7 @@ try:
     df = pd.DataFrame(data)
     df.to_csv("clean_ledger.csv", index=False)
     
-    print("\nYassss Girl! Your custom budget has been saved! Run -javac BudgetManager.java- then run -java BudgetManager-!")
+    print("\nYassss Girl! Your custom budget has been saved! Now run *javac BudgetManager.java* then *java BudgetManager*!")
 
 except ValueError:
     print("Ooopsies Babe! Please enter numbers only (e.g., 2500 or 45.50).")
