@@ -44,24 +44,24 @@ public class BudgetManager {
             double netSavings = totalIncome - totalExpenses;
             double savingsRate = (totalIncome > 0) ? (netSavings / totalIncome) * 100 : 0;
 
-            System.out.println("*****************************************");
+            System.out.println("-----------------------------------------");
             System.out.println("       YOUR PERSONAL BUDGET REPORT       ");
-            System.out.println("*****************************************");
+            System.out.println("-----------------------------------------");
             System.out.println("Total Income:       +$" + String.format("%.2f", totalIncome));
             System.out.println("Total Expenses:     -$" + String.format("%.2f", totalExpenses));
             System.out.println("-----------------------------------------");
             System.out.println("Net Monthly Savings: $" + String.format("%.2f", netSavings));
             System.out.println("Savings Rate:        " + String.format("%.1f", savingsRate) + "%");
-            System.out.println("*****************************************");
+            System.out.println("-----------------------------------------");
             
-            System.out.println("EXPENSE BREAKDOWN");
+            System.out.println("\n EXPENSE BREAKDOWN");
             System.out.println("Food:          $" + String.format("%.2f", food));
             System.out.println("Utilities:     $" + String.format("%.2f", utilities));
             System.out.println("Entertainment: $" + String.format("%.2f", entertainment));
             System.out.println("Transport:     $" + String.format("%.2f", transport));
 
-            // Automated Budgeting Advice
-            System.out.println("BUDGET MANAGER FEEDBACK");
+            
+            System.out.println("\n BUDGET MANAGER FEEDBACK");
             if (netSavings < 0) {
                 System.out.println("Woah Woah Woahh Girl... You are spending more than you earn! You need to cut back.");
             } else if (savingsRate < 20) {

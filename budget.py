@@ -1,6 +1,6 @@
 import pandas as pd
 
-print("*** PERSONAL BUDGET SETUP ***")
+print("*** ENTER BUDGET ***")
 
 try:
     monthly_income = float(input("Enter your total monthly income ($): "))
@@ -20,7 +20,7 @@ try:
     df = pd.DataFrame(data)
     df.to_csv("clean_ledger.csv", index=False)
     
-    print("\nYassss Girl! Your custom budget has been saved to clean_ledger.csv for Java.")
+    print("\nYassss Girl! Your custom budget has been saved! Run -javac BudgetManager.java- then run -java BudgetManager-!")
 
 except ValueError:
     print("Ooopsies Babe! Please enter numbers only (e.g., 2500 or 45.50).")
