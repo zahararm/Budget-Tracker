@@ -54,14 +54,14 @@ public class BudgetManager {
             System.out.println("Savings Rate:        " + String.format("%.1f", savingsRate) + "%");
             System.out.println("-----------------------------------------");
             
-            System.out.println("\n EXPENSE BREAKDOWN");
+            System.out.println("\nEXPENSE BREAKDOWN");
             System.out.println("Food:          $" + String.format("%.2f", food));
             System.out.println("Utilities:     $" + String.format("%.2f", utilities));
             System.out.println("Entertainment: $" + String.format("%.2f", entertainment));
             System.out.println("Transport:     $" + String.format("%.2f", transport));
 
             
-            System.out.println("\n BUDGET MANAGER FEEDBACK");
+            System.out.println("\nBUDGET MANAGER FEEDBACK");
             if (netSavings < 0) {
                 System.out.println("Woah Woah Woahh Girl... You are spending more than you earn! You need to cut back.");
             } else if (savingsRate < 20) {
